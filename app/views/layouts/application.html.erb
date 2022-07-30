@@ -11,9 +11,12 @@
   </head>
 
   <body>
+    <div class="container">
     <nav class="navbar">
-      <%= link_to "All Restaurants", restaurants_path, class: "btn btn-primary" %>
+      <%= link_to "All Restaurants", restaurants_path %>
+      <%= link_to "Add New Restaurant", restaurants_new_path %>
     </nav>
     <%= yield %>
+    </div>
   </body>
 </html>
